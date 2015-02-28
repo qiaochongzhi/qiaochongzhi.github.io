@@ -1,0 +1,26 @@
+# Dependencies
+markdown:            kramdown
+highlighter:         pygments
+
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           pretty
+relative_permalinks: true
+
+# Setup
+title:               Qiao Chongzhi
+tagline:             'Good Good Study, Day Day Up'
+description:         'Good Good Study'
+url:                 http://qiaochongzhi.me
+baseurl:             /
+paginate:            5
+
+# About/contact
+author:
+  name:              Qiao Chongzhi
+  url:               http://ist.ecust.edu.cn/index.php?r=site/masterstudent_detial/id/10
+  email:             qiao_chongzhi@outlook.com
+
+# Custom vars
+version:             1.0.0
