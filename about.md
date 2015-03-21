@@ -8,7 +8,7 @@ title: About
 
 ### 联系方式:
 
-Email: [qiao_chongzhi@outlook.com](mailto:qiao_chongzhi@outlook.com) 
+Email: [iam@czqiao.me](mailto:iam@czqiao.me) 
 
 ### 关于该博客：
 

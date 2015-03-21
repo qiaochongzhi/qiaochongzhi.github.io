@@ -9,18 +9,18 @@ permalink:           pretty
 relative_permalinks: true
 
 # Setup
-title:               Qiao Chongzhi
+title:               Qiao CZ
 tagline:             'Good Good Study, Day Day Up'
 description:         'Good Good Study'
-url:                 http://qiaochongzhi.me
+url:                 http://czqiao.me
 baseurl:             /
 paginate:            5
 
 # About/contact
 author:
-  name:              Qiao Chongzhi
+  name:              Qiao CZ
   url:               http://ist.ecust.edu.cn/index.php?r=site/masterstudent_detial/id/10
-  email:             qiao_chongzhi@outlook.com
+  email:             iam@czqiao.me
 
 # Custom vars
 version:             1.0.0
