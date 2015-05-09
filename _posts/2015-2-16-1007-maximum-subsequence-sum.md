@@ -36,62 +36,62 @@ Sample Input:
 
 void MaxSubeqSum(int List[], int N)
 {
-	int ThisSum, MaxSum;
-	int i;
-	int left = 0, right;
-	int old_left = -1;
-	int neg = 1, zer = 1;
+  int ThisSum, MaxSum;
+  int i;
+  int left = 0, right;
+  int old_left = -1;
+  int neg = 1, zer = 1;
 
-	ThisSum = MaxSum = 0;
+  ThisSum = MaxSum = 0;
 
-	for (i = 0; i < N; i++)
-	{
-		ThisSum += List[i];
-		
-		if (List[i] > 0) neg = 0;
-		else if (List[i] == 0) zer = 0;
+  for (i = 0; i < N; i++)
+  {
+    ThisSum += List[i];
+    
+    if (List[i] > 0) neg = 0;
+    else if (List[i] == 0) zer = 0;
 
-		if (ThisSum > MaxSum)
-		{
-			MaxSum = ThisSum;
-			right  = i;
-			left   = old_left + 1;
-		}
-		else if (ThisSum < 0)
-		{
-			ThisSum  = 0;
-			old_left = i;
-		}
-	}
+    if (ThisSum > MaxSum)
+    {
+      MaxSum = ThisSum;
+      right  = i;
+      left   = old_left + 1;
+    }
+    else if (ThisSum < 0)
+    {
+      ThisSum  = 0;
+      old_left = i;
+    }
+  }
 
-	if (neg == 1)
-		if (zer == 1) 
-		 printf("%d %d %d\n", MaxSum, List[0], List[N-1]);
-		else printf("%d %d %d\n", MaxSum, 0, 0);
-	else
-		printf("%d %d %d\n", MaxSum, List[left], List[right]);
+  if (neg == 1)
+    if (zer == 1) 
+     printf("%d %d %d\n", MaxSum, List[0], List[N-1]);
+    else printf("%d %d %d\n", MaxSum, 0, 0);
+  else
+    printf("%d %d %d\n", MaxSum, List[left], List[right]);
 
-	return ;
+  return ;
 
 }
 
 int main()
 {
-	int List[MaxNumber];
-	int i, n;
+  int List[MaxNumber];
+  int i, n;
 
-	scanf("%d", &n);
-	
-	if (n > MaxNumber) return -1;
-	
-	for (i = 0; i < n; i++)
-	{
-		scanf("%d", &List[i]);
-	}
+  scanf("%d", &n);
+  
+  if (n > MaxNumber) return -1;
+  
+  for (i = 0; i < n; i++)
+  {
+    scanf("%d", &List[i]);
+  }
 
-	MaxSubeqSum(List, n);
+  MaxSubeqSum(List, n);
 
-	return 0;
+  return 0;
 
 }
 
